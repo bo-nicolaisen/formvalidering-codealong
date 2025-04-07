@@ -8,15 +8,34 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="#">
+    <title>form validering</title>
+    <meta name="description" content="form validerings codealong">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="assets/css/site.css">
     <script src="assets/js/site.js" defer></script>
+
 </head>
 
 <body>
+
+    <h1>Form validering</h1>
+
+    <form id="myForm">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+       <button id="submitButton">indsend</button>
+       <!--  <button id="submitButton" onclick="SubmitFormCallBack()">indsend</button> -->
+
+    </form>
+ 
+    <p id="errorMessage"></p>
+    <p id="successMessage"></p>    
 
 
 
